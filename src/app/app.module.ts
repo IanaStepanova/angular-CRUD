@@ -8,17 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateEmployeeComponent } from './employees/create-employee.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ListEmployeesComponent,
-    CreateEmployeeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  declarations: [AppComponent, ListEmployeesComponent, CreateEmployeeComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
