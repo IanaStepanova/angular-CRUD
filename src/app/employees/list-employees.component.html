@@ -1,0 +1,46 @@
+<ul class="employee-list">
+  <li class="employee-item" *ngFor="let employee of employees">
+    <div class="employee-item__name">{{ employee.name }}</div>
+    <div class="employee-item__details">
+      <div class="image-container">
+        <img class="image-file" src="{{ employee.photoPath }}" alt="" />
+      </div>
+      <div class="text-container">
+        <table class="employee-table">
+          <tr>
+            <td class="employee-table-row-1">Gender: </td>
+            <td class="employee-table-row-2">{{ employee.gender }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Date of Birth: </td>
+            <td class="employee-table-row-2">{{
+              employee.dateofBirth | date
+            }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Contact Preference: </td>
+            <td class="employee-table-row-2">{{
+              employee.contactPreference
+            }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Phone: </td>
+            <td class="employee-table-row-2">{{ employee.phoneNumber }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Email: </td>
+            <td class="employee-table-row-2">{{ employee.email }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Department: </td>
+            <td class="employee-table-row-2">{{ employee.department }}</td>
+          </tr>
+          <tr>
+            <td class="employee-table-row-1">Is Active: </td>
+            <td class="employee-table-row-2">{{ employee.isActive }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </li>
+</ul>
