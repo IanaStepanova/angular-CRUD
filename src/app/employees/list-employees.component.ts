@@ -9,14 +9,14 @@ export class ListEmployeesComponent implements OnInit {
   employees: Employee[] = [
     {
       id: 1,
-      name: 'Gennadiy',
+      name: 'Alexey',
       gender: 'Male',
       contactPreference: 'Phone',
       phoneNumber: 7825978640,
       dateofBirth: new Date('07/25/1965'),
       department: 'IT',
       isActive: true,
-      photoPath: '../../assets/images/lead-developer.jpg',
+      photoPath: './assets/images/team-lead.jpg',
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export class ListEmployeesComponent implements OnInit {
       dateofBirth: new Date('09/30/1993'),
       department: 'IT',
       isActive: false,
-      photoPath: '../../assets/images/junior.jpg',
+      photoPath: './assets/images/junior.jpg',
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export class ListEmployeesComponent implements OnInit {
       dateofBirth: new Date('11/20/1991'),
       department: 'IT',
       isActive: true,
-      photoPath: '../../assets/images/student.jpg',
+      photoPath: './assets/images/student.jpg',
     },
   ];
   constructor() {}
