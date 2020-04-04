@@ -1,1 +1,18 @@
-<p>create-employee works!</p>
+<form #employeeForm="ngForm" action="submit" class="form-container">
+  <div class="create-employee">
+    <div class="create-employee__header">
+      Create Employee
+    </div>
+    <div class="create-employee__contents">
+      <div class="form-row">
+        <label for="fullName">Full Name</label>
+        <input class="form-input" id="fullName" type="text" />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input class="form-input" id="email" type="text" />
+      </div>
+      <button type="submit" class="submit-button">Save</button>
+    </div>
+  </div>
+</form>
