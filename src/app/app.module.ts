@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,7 @@ import { CreateEmployeeComponent } from './employees/create-employee.component';
 const appRoutes: Routes = [
   { path: 'list', component: ListEmployeesComponent },
   { path: 'create', component: CreateEmployeeComponent },
-  {path: '', redirectTo: "/list", pathMatch: 'full'}
+  { path: '', redirectTo: '/list', pathMatch: 'full' },
 ];
 @NgModule({
   declarations: [AppComponent, ListEmployeesComponent, CreateEmployeeComponent],
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],
